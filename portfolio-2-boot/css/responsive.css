@@ -1,0 +1,42 @@
+/*
+@media (max-width:1199px) {}
+
+@media (min-width:768px) and (max-width:991px) {}
+*/
+
+@media (min-width:576px) and (max-width:767px) {
+/*    SERVICES START*/
+    #services .services h3
+    {
+        font-size: 1rem;
+    }
+/*    SERVICES STOP*/
+    /*    PORTFOLIO START*/
+    #portfolio .portfolio {
+        flex: 50%;
+        max-width: 50%;
+    }
+    /*    PORTFOLIO STOP*/
+/*    TEAM START*/
+    #team .team-squares {
+        flex: 50%;
+        max-width: 50%;
+    }
+    #team .team-row {
+        justify-content: center;
+    }
+/*    TEAM STOP*/
+}
+
+
+
+@media (max-width:575px) {
+/*    HEADER START*/
+    #main-header h1,
+    #main-header h2 {
+        font-size: 2.5rem;
+    }
+/*    HEADER STOP*/
+}
+
+/*@media (max-width:480px) {}*/
