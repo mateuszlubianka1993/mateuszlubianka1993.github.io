@@ -1,0 +1,404 @@
+body {
+
+    font-family: 'Lato', sans-serif;
+    color: #FFF;
+    margin: 0;
+    font-weight: 300;
+}
+#portfolio, #main-header, #about, #skills, #certificate {
+    position: relative;
+    z-index: 2;
+}
+span {
+/*	color: #1ac056;*/
+/*	color: #0060A8;*/
+	color: #fff;
+	font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-align: center;
+    color: #fff;
+}
+h1 {
+    font-size: 6rem;
+}
+h3 {
+   color: #fff; 
+   margin-bottom: 50px;
+   font-size: 3rem;
+}
+h5 {
+    color: #fff;
+}
+p {
+    font-size: 1.2rem;
+    font-weight: normal;
+    text-align: justify;
+}
+.mask {
+    background-color: rgba(25, 25, 112,0.6);
+    width: 100%;
+    height: 100%;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+.section-button {
+    text-align: center;
+    margin-top: 50px;
+}
+ .section-button button {
+    width: 120px;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0);
+    color: #fff;
+    border: 3px solid #fff;
+    transition: all 0.4s ease-in-out;
+    padding: 7px;
+}
+@keyframes rotate {
+0%, 100% {
+transform: rotateX(0);
+}
+50% {
+transform: rotateX(30deg);
+}
+}
+.section-button button {
+animation-name: rotate;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+}
+.section-button button:hover {
+    border-color: mediumvioletred;
+    color: mediumvioletred;
+}
+
+/*main-nav START*/
+#main-nav 
+{
+/*    position: absolute;*/
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 3;   
+}
+
+#main-nav a
+{
+    color: #fff;
+    text-transform: uppercase;
+    transition: all 0.4s ease-in-out;
+}
+
+#main-nav  a:hover 
+{
+    color: mediumvioletred;
+    border-bottom: 2px solid mediumvioletred;
+}
+#main-nav .nav-logo{
+   border: 2px solid #fff;
+   width: 50px;
+   height: 50px;
+   padding 5px;
+    text-align: center;
+   border-radius: 50%;
+   font-size: 2rem;
+   line-height: 110%;
+}
+#main-nav .nav-logo:hover {
+    transform: rotate(360deg);
+    border-color: mediumvioletred;
+}
+/*main-nav STOP*/
+
+/*header START*/
+
+header#main-header
+{
+    font-family: 'Roboto', sans-serif;
+    background-image: url('../img/pexels-photo-433604.jpeg');
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+
+#main-header .header-container
+{
+    position: absolute;
+    top: 40%;  
+}
+#main-header .header-button {
+    text-align: center;
+    margin-top: 100px;
+}
+#main-header .header-button button {
+    font-size: 2.5rem;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0);
+    color: #fff;
+    border: 3px solid #fff;
+    transition: all 0.4s ease-in-out;
+}
+@keyframes jump {
+0%, 100% {
+transform: translate(0,0);
+}
+50% {
+transform: translate(0,20px);
+}
+}
+#main-header .header-button button {
+animation-name: jump;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+}
+#main-header .header-button button:hover {
+    border-color: mediumvioletred;
+    color: mediumvioletred;
+}
+/*header STOP*/
+
+
+/*section ABOUT START*/
+section#about{
+    height: 500px;
+    background-image: url(../img/pexels-photo-414859.jpeg);
+/*    background-image: url(../IMG_20161222_004934.jpg);*/
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+
+/*section ABOUT STOP*/
+
+
+
+/*section SKILLS START*/
+section#skills {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: rgb(25, 25, 112);
+}
+#skills .skills-row {
+    margin-top: 70px;
+}
+#skills .skill-clms {
+    padding-bottom: 25px;
+}
+#skills .skill-squares {
+    border: 5px solid #fff;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    padding: 10px;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    opacity: 0;
+    transform: translateX(60px);
+}
+
+#skills .skill-squares:hover {
+    color: mediumvioletred;
+    border-color: mediumvioletred;
+}
+#skills .showing {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#skills figure {
+    text-align: center;
+    font-size: 3rem;
+}
+
+#skills figcaption {
+    text-align: center;
+}
+#skills-plus {
+    margin-top: 50px;
+}
+/*section SKILLS STOP*/
+
+
+/*section CERTIFICATE START*/
+#certificate {
+    background-image: url(../img/pexels-photo-414859.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#certificate figure {
+    height: 300px;
+    width: 220px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#certificate figcaption {
+    text-align: center;
+}
+#certificate figure img {
+    max-height: 100%;
+    max-width: 100%;
+}
+#certificate .certificate-square {
+    position: relative;
+}
+#img1 {
+    transform: translate(100px, 20px);
+}
+
+#img3 {
+    transform: translate(-100px, 20px);
+}
+
+/*section CERTIFICATE STOP*/
+
+
+/*section PORTFOLIO START*/
+#portfolio {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: rgb(25, 25, 112); 
+    margin-bottom: 200px;
+}
+.portfolio-squares {
+    height: 179px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease-in-out;
+}
+
+#portfolio1 {
+    background-image: url(../img/portfolios/portfolio1s.jpg);
+}
+#portfolio2 {
+    background-image: url(../img/portfolios/portfolio2s.jpg);
+}
+#portfolio3 {
+    background-image: url(../img/portfolios/portfolio3s.jpg);
+}
+#portfolio4 {
+    background-image: url(../img/portfolios/portfolio4s.jpg);
+}
+#portfolio5 {
+    background-image: url(../img/portfolios/portfolio5s.jpg);
+}
+#portfolio6 {
+    background-image: url(../img/portfolios/portfolio2s.jpg);
+}
+.portfolio-mask{
+/*    background: rgba(25, 25, 112,0.6);*/
+    background: rgba(0, 0, 0,0.5);
+    color: #fff;
+	height: 100%;
+    opacity: 0;
+    position: relative;
+    transition: all 0.5s ease-out;  
+}
+
+.portfolio-mask i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 3rem;
+}
+.portfolio-mask button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100px;
+    font-size: 1.3rem;
+    padding: 2px;
+    background-color: rgba(25, 25, 112,0.6);
+    border: none;
+    color: #fff;
+}
+.scale {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.portfolio-mask:hover {
+    opacity: 1;
+    cursor: pointer;
+    max-height: 100%;
+}
+.portfolio-squares:hover{
+    transform: scale(1.3) rotate(-5deg);
+    background-size: cover;
+}
+/*section PORTFOLIO STOP*/
+
+/*section CONTACT START*/
+section#contact {
+    padding-top: 70px;
+    padding-bottom: 20px;
+    background-color: #000;
+/*    prx*/
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.footer-square {
+    text-align: center;
+    padding-top: 10px;
+}
+.social-squares {
+    text-align: center;
+    font-size: 2rem;
+}
+.social-squares a {
+    color: #fff;
+    display: block;
+    width: 70px;
+    height: 70px;
+    border: 2px solid #fff;
+    line-height: 70px;
+    border-radius: 50%;
+    transition: all 0.4s ease-in-out;
+}
+.social-squares a:hover {
+    color: mediumvioletred;
+    border-color: mediumvioletred;
+    transform: scale(1.2);
+}
+/*section CONTACT STOP*/
+
+
+/*FOOTER START*/
+
+/*FOOTER STOP*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

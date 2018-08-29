@@ -1,0 +1,178 @@
+@media (max-width:1199px) {
+    /*HEADER START*/
+    h1 {
+        font-size: 5.2rem;
+    }
+    #main-header .header-button {
+        margin-top: 50px;
+    }
+    /*HEADER STOP    */
+    /*    PORTFOLIO START*/
+    .portfolio-squares {
+        background-size: contain;
+        height: 148px;
+
+    }
+    /*PORTFOLIO STOP*/
+}
+
+@media (max-width:991px) {
+    /*SKILLS START*/
+    #skills figure {
+        font-size: 2.5rem;
+    }
+    #skills .skill-squares {
+        width: 100%;
+        padding: 10px;
+    }
+    /*SKILLS STOP    */
+    /*    PORTFOLIO START*/
+    .portfolio-squares {
+        background-size: contain;
+        height: 109px;
+    }
+    /*    PORTFOLIO STOP*/
+}
+
+@media (max-width:767px) {
+    /*    HEADER START*/
+    h1 {
+        font-size: 4.5rem;
+    }
+    #main-header .header-container {
+        top: 30%;
+    }
+    /*    HEADER STOP*/
+    /*    ABOUT START*/
+    section#about {
+        height: 530px;
+    }
+    /*    ABOUT STOP*/
+    /*    SKILLS START*/
+    #skills figure {
+        position: relative;
+    }
+
+    #skills figcaption {
+        position: absolute;
+        top: 125px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #skills .skill-squares {
+        width: 100%;
+        padding: 12px;
+        height: 105px;
+        margin-bottom: 50px;
+    }
+    /*    SKILLS STOP*/
+    /*    CERTIFICATE START*/
+    #certificate figure {
+        height: 250px;
+        width: 160px;
+    }
+    /*    CERTIFICATE STOP*/
+    /*    PORTFOLIO START*/
+    #portfolio .col-sm-4.portfolio-box {
+        max-width: 50%;
+        flex: 50%;
+    }
+
+    .portfolio-squares {
+        background-size: cover;
+        height: 132px;
+
+    }
+    /*    PORTFOLIO STOP*/
+    /*    CONTACT START*/
+    .social-squares a {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+    }
+    /*    CONTACT STOP*/
+}
+
+
+
+@media (max-width:575px) {
+    /*    CERTIFICATE START*/
+    #certificate figure {
+        height: 220px;
+    }
+    #certificate .certificate-square {
+        margin-bottom: 30px;
+    }
+    /*    CERTIFICATE STOP*/
+    /*    SKILLS START*/
+    .skill-clms {
+        max-width: 50%;
+        flex: 50%;
+    }
+
+    #skills .skill-squares {
+        width: 60%;
+    }
+    #skills figure {
+        font-size: 3.5rem;
+    }
+    /*    SKILLS STOP*/
+    /*    CONTACT START*/
+    #portfolio {
+        margin-bottom: 280px;
+    }
+    #contact address {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .social-squares {
+        width: 25%;
+    }
+    .social-squares a {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #contact .social {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    /*    CONTACT STOP*/
+}
+
+@media (max-width:480px) {
+    /*    ABOUT START*/
+    p {
+        font-size: 1rem;
+    }
+    /*    ABOUT STOP*/
+    /*    SKILLS START*/
+    #skills .skill-squares {
+        width: 60%;
+    }
+    #skills figure {
+        font-size: 3rem;
+    }
+    /*    SKILLS STOP*/
+    /*    PORTFOLIO START*/
+    #portfolio .col-sm-4.portfolio-box {
+        max-width: 100%;
+        flex: 100%;
+    }
+
+    .portfolio-squares {
+        background-size: cover;
+        min-height: 180px;
+
+    }
+    /*    PORTFOLIO STOP*/
+    /*    CONTACT START*/
+    #portfolio {
+        margin-bottom: 300px;
+    }
+    #contact address {
+        width: 80%;
+    }
+    /*    CONTACT STOP*/
+}
