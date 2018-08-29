@@ -152,7 +152,6 @@ h1, h2, h3, h4, h5, h6 {
 {
     top: 50%;
     transform: translateY(-30%);
-/*    color: #237505;*/
     color: #ffbf00;
 }
 /* Left Menu - Stop*/
@@ -202,7 +201,6 @@ section#members
     left: 0;
     right: 0;
     position: relative;
-/*    background-color: #000112;*/
     background-color: #010101;
     color: #ffbf00;
     letter-spacing: 2px;
@@ -282,7 +280,6 @@ section#history
     left: 0;
     right: 0;
     position: relative;
-/*    background-color: #000112;*/
     background-color: #010101;
     color: #ffbf00;
     letter-spacing: 2px;
@@ -320,7 +317,6 @@ section#gallery
     left: 0;
     right: 0;
     position: relative;
-/*    background-color: #000112;*/
     background-color: #010101;
     color: #ffbf00;
     letter-spacing: 2px;
