@@ -1,0 +1,106 @@
+@media (max-width:1199px) {}
+
+@media (min-width:768px) and (max-width:991px) {
+    /*    PORTFOLIO START*/
+    .portfolio-img {
+        height: 220px;
+        font-size: 0.8rem;
+    }
+    .port-mask {
+        padding: 15px 5px 5px 5px;
+    }
+    /*    PORTFOLIO STOP*/
+}
+
+@media (min-width:576px) and (max-width:767px) {
+    /*    ABOUT START*/
+    #about .about-squares {
+        flex: 100%;
+        max-width: 100%;
+    }
+    /*    ABOUT STOP*/
+    /*    PORTFOLIO START*/
+    .portfolio-img {
+        flex: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .port-mask {
+        padding-top: 50px;
+    }
+
+    /*    PORTFOLIO STOP*/
+    /*    FOOTER START*/
+    .footer-box {
+        flex: 100%;
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    #main-footer h3 {
+        text-align: center;
+    }
+    #main-footer .social {
+        justify-content: center;
+    }
+    /*    FOOTER STOP*/
+}
+
+
+
+@media (max-width:575px) {
+    /*    SKILLS START*/
+    #skills .skill-squares {
+        flex: 50%;
+        max-width: 50%;
+        margin-bottom: 20px;
+    }
+    /*    SKILLS STOP*/
+    /*    PORTFOLIO START*/
+    .footer-box {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .portfolio-img {
+        flex: 100%;
+        max-width: 100%;
+        margin-bottom: 30px;
+        font-size: 1.2rem;
+    }
+    .port-mask {
+        padding-top: 50px;
+    }
+
+    /*    PORTFOLIO STOP*/
+    /*    FOOTER START*/
+    #main-footer h3 {
+        text-align: center;
+    }
+    #main-footer .social {
+        justify-content: center;
+    }
+    /*    FOOTER STOP*/
+}
+
+@media (max-width:480px) {
+    h1 {
+        font-size: 5rem;
+    }
+    /*    ABOUT START*/
+    #about img {
+        height: 250px;
+    }
+
+    /*    ABOUT STOP*/
+    /*    PORTFOLIO START*/
+    .portfolio-img {
+        height: 180px;
+        font-size: 0.8rem;
+    }
+    .port-mask {
+        padding-top: 10px;
+    }
+    /*    PORTFOLIO STOP*/
+}
+
+}
