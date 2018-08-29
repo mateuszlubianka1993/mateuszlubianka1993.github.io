@@ -1,0 +1,188 @@
+@media (max-width:1199px) {
+    /*    MEMBERS START*/
+    section#members > div.members > div.members-item {
+        width: 33%;
+        height: 400px;
+    }
+    /*    MEMBERS STOP*/
+    /*    GALLERY START*/
+    #slider {
+        height: 520px;
+    }
+    /*    GALLERY STOP*/
+    /*    CONTACT START*/
+    section#contact .socialm a {
+        width: 60px;
+        height: 100%;
+        padding: 10px;
+    }
+    /*    CONTACT STOP*/
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    /*    MEMBERS START*/
+    section#members > div.members > div.members-item {
+        height: 350px;
+    }
+    /*    MEMBERS STOP*/
+    /*    GALLERY START*/
+    #slider {
+        width: 90%;
+        height: 480px;
+    }
+    /*    GALLERY STOP*/
+    /*    CONTACT START*/
+    section#contact .socialm a {
+        width: 50px;
+        height: 100%;
+        padding: 5px;
+    }
+    /*    CONTACT STOP*/
+}
+
+@media (max-width:767px) {
+    /*    MEMBERS START*/
+    section#members > div.members > div.members-item {
+        float: none;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+    }
+    /*    MEMBERS STOP*/
+    /*    GALLERY START*/
+    #slider {
+        width: 90%;
+        height: 300px;
+    }
+    /*    GALLERY STOP*/
+    /*    CONTACT START*/
+    section#contact .socialm a {
+        width: 60px;
+        padding: 10px;
+    }
+    section#contact .socialm {
+        margin-right: 30px;
+    }
+
+    #contact .adres,
+    #contact .mail {
+        float: none;
+        width: 90%;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    section#contact .social {
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    section#contact .socialm.tw {
+        margin-right: 0;
+    }
+    .mail form {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+    section#contact > div.contact-squares {
+        height: 550px;
+    }
+    /*    CONTACT STOP*/
+}
+
+
+
+@media (max-width:575px) {
+    /*    NAV START*/
+    .name-in-nav h2 {
+        font-size: 1.2rem;
+        line-height: 50px;
+    }
+    #main-nav > ul {
+        padding-left: 0;
+    }
+    /*    NAV STOP*/
+    /*    HISTORY START*/
+    section#history {
+        padding-bottom: 0px;
+        font-size: 100%;
+    }
+    /*    HISTORY STOP*/
+    /*    MEMBERS START*/
+    section#members > div.members > div.members-item {
+        width: 75%;
+        padding-bottom: 20px;
+    }
+    section#members > .section-header
+{
+    padding-top: 10px;
+}
+    /*    MEMBERS STOP*/
+    /*    GALLERY START*/
+    #slider {
+        height: 280px;
+    }
+    /*    GALLERY STOP*/
+    /*    FOOTER START*/
+    #footer .logo img {
+        height: 30px;
+        width: 30px;
+    }
+    /*    FOOTER STOP*/
+}
+
+@media (max-width:480px) {
+/*    NAV START*/
+    .name-in-nav h2 {
+        font-size: 0;
+    }
+/*    NAV STOP*/
+/*    HEADER START*/
+    .logo
+{
+    width: 22%;
+    height: 22%;
+}
+/*    HEADER STOP*/
+/*    MEMBERS START*/
+    section#members > div.members > div.members-item {
+        width: 80%;
+        height: 330px;
+    }
+/*    MEMBERS STOP*/
+    /*    GALLERY START*/
+    #slider {
+        height: 230px;
+    }
+    .slider-arrows>button
+{
+    border: none;
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+}
+    /*    GALLERY STOP*/
+    /*    CONTACT START*/
+    section#contact .socialm a {
+        width: 50px;
+        padding: 5px;
+    }
+    #contact .adres,
+    #contact .mail {
+        width: 100%;
+    }
+    #contact .adres {
+        font-size: 0.8rem;
+    }
+    section#contact .socialm.tw {
+        margin-right: 32px;
+    }
+    .mail form {
+        width: 100%;
+    }
+    section#contact > div.contact-squares {
+        height: 500px;
+    }
+    /*    CONTACT STOP*/
+}
