@@ -176,3 +176,32 @@
     }
     /*    CONTACT STOP*/
 }
+
+@media (max-width:575px) {
+    /*    HEADER START*/
+    h1 {
+        font-size: 4rem;
+    }
+    /*    HEADER STOP*/
+    /*    SKILLS START*/
+    #skills figure {
+        font-size: 2.4rem;
+        display: flex;
+        justify-content: center;
+        padding-top: 15px;
+    }
+    /*    SKILLS STOP*/
+     /*    PORTFOLIO START*/
+    .portfolio-squares {
+        background-position: center;
+
+    }
+    /*PORTFOLIO STOP*/
+    /*    CONTACT START*/
+    .social-squares a {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+    /*    CONTACT STOP*/
+}
