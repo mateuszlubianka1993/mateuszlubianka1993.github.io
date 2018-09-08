@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+    <title>Kalkulator BMI</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <!--google fonts-->
+
+    <!--fonts awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+
+
+    <!--main style-->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!--responsive css-->
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+    <!--    HEADER START-->
+    <header id="main-header">
+        <h1>Kalkulator BMI</h1>
+    </header>
+    <!--    HEADER STOP-->
+
+    <!--main-nav START-->
+    <nav id="main-nav" class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto w-100 justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="#bmi-calc">Kalkulator BMI</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#kcal-calc">Kalkulator Kalorii</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#main-footer">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--    main-nav STOP-->
+    <!--SECTION CALC START-->
+    <section id="bmi-calc" class="section-box">
+        <div class="container calc-container">
+            <h2>Oblicz BMI</h2>
+            <div class="row calc-row">
+                <form action="" class="col-sm-12 form-box" id="calc-form">
+
+                    <label for="person-weight">Waga (kg): </label>
+                    <input type="number" required id="person-weight">
+                    <label for="person-height">Wzrost (cm):</label>
+                    <input type="number" required id="person-height">
+                    <button id="calc-start" class="start-button">Oblicz</button>
+                    <ul>Zakresy wartości BMI:
+                        <li>&lsaquo; 16,0 – wygłodzenie</li>
+                        <li>16,0–16,99 – wychudzenie</li>
+                        <li>17,0–18,49 – niedowaga</li>
+                        <li>18,5–24,99 – wartość prawidłowa</li>
+                        <li>25,0–29,99 – nadwaga</li>
+                        <li>30,0–34,99 – I stopień otyłości</li>
+                        <li>35,0–39,99 – II stopień otyłości (otyłość kliniczna)</li>
+                        <li>&rsaquo;= 40,0 – III stopień otyłości (otyłość skrajna)</li>
+                    </ul>
+                </form>
+                <div id="calc-pop-up" class="pop-up-div">
+                    <button class="pop-up-exit" id="bmi-exit"><i class="fas fa-times"></i></button>
+                    <h2>Wynik BMI: </h2>
+                    <div id="bmi-result" class="pop-up-box"></div>
+                    <div id="bmi-range" class="pop-up-box"></div>
+                    <div class="pop-up-img"><i class="fas fa-football-ball"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--SECTION CALC STOP-->
+    <!--SECTION kcal-CALC START-->
+    <section id="kcal-calc" class="section-box">
+        <div class="container calc-container">
+            <h2>Oblicz BMR: </h2>
+            <div class="row calc-row">
+                <form action="" class="col-sm-12 form-box" id="kcal-form">
+                    <label for="kcal-female">K: </label>
+                    <input type="radio" name="sex" id="kcal-female" required>
+                    <label for="kcal-male">M: </label>
+                    <input type="radio" name="sex" id="kcal-male" required>
+                    <label for="kcal-age">Wiek (lata): </label>
+                    <input type="number" required min="18" id="kcal-age">
+                    <label for="kcal-person-weight">Waga (kg): </label>
+                    <input type="number" required id="kcal-person-weight">
+                    <label for="kcal-person-height">Wzrost (cm):</label>
+                    <input type="number" required id="kcal-person-height">
+                    <button id="kcal-calc-start" class="start-button">Oblicz</button>
+                    
+                </form>
+                <div id="kcal-pop-up" class="pop-up-div">
+                    <button class="pop-up-exit" id="kcal-exit"><i class="fas fa-times"></i></button>
+                    <h3>Wynik BMR: </h3>
+                    <div id="kcal-result" class="pop-up-box"></div>
+                    <div class="pop-up-img"><i class="fas fa-football-ball"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--SECTION kcal-CALC STOP-->
+    <!--    FOOTER START-->
+    <footer id="main-footer">
+        <div class="container footer-container">
+            <div class="row footer-row">
+                <h2>Kontakt</h2>
+                <div class="col-sm-12 footerbox">
+                    <address>
+                        ul. Główna 76 <br>
+                        22-345 Lublin <br>
+                        tel. 789-678-567 <br>
+                        e-mail: bmi@gmail.com <br>
+                    </address>
+                </div>
+                <div class="col-sm-12 footerbox">
+                    &copy; Mateusz Łubianka 2018
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--    FOOTER STOP-->
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
